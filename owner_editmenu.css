@@ -1,0 +1,98 @@
+*{
+    box-sizing:border-box;
+    font-family: 'orbitron';
+}
+
+body{
+    font-family: Arial;
+    padding: 10px;
+    -webkit-animation: colorchange 10s infinite; 
+    animation: colorchange 10s infinite;
+}
+
+@-webkit-keyframes colorchange {
+    0% {background : #e6ddf0;}
+    25%  {background: #bab2d7;}
+    50%  {background: #d9caeb;}
+    75%  {background: #ccb6e4;}
+    100%  {background: #c0a4de;}
+}
+@keyframes colorchange {
+    0% {background : #e6ddf0;}
+    25%  {background: #bab2d7;}
+    50%  {background: #d9caeb;}
+    75%  {background: #ccb6e4;}
+    100%  {background: #c0a4de;}
+}   
+
+/* HEADER ATAU BLOG TITTLE */
+.header{
+    padding: 10px;
+    text-align: center;
+    background: #ffb880;
+    color:white;
+}
+
+.header h1{
+    font-size: 50px;
+}
+
+/* STYLE THE TOP NAVIGATION BAR */
+.topnav {
+    overflow:hidden;
+    background-color: #fea153;
+}
+
+/* STYLE THE TOPNAV LINKS */
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* CHANGE COLOR ON HOVER */
+.topnav a:hover{
+    background-color: #ff9046;
+    color: black;
+}
+
+/* ROW DIVISION */
+.row{
+    float: left;
+    background-color: #ffcf94;
+    margin-top: 20px;
+    padding: 20px;
+    content: "";
+    display: table;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row table{
+	border-collapse: collapse;
+}
+
+/* RESPONSIVE LAYOUT
+WHEN THE SCREEN IS LESS THAN 800px WIDE
+MAKE THE TWO COLUMNS STACK ON TOP OF EACH OTHER INSTEAD OF NEXT TO EACH OTHER */
+@media screen and (max-width:800px) {
+    .row{
+        width: 100px;
+        padding: 0;
+    }
+}
+
+/* RESPONSIVE LAYOUT
+WHEN THE SCREEN IS LESS THAN 400px WIDE
+MAKE THE NAVIGANTION LINKS STACK ON TOP OF EACH OTHER INSTEAD OF NEXT TO EACH OTHER */
+@media screen and (max-width:400px) {
+    .topnav a{
+        float: none;
+        width: 100%;
+    }
+}
